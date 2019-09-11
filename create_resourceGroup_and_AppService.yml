@@ -2,7 +2,7 @@
   connection: local
   vars:
     resource_group: myResourceGroup
-    webapp_name: thrashandbash1184
+    #webapp_name: thrashandbash1184
     plan_name: myAppServicePlan
     location: eastus
   tasks:
@@ -14,7 +14,7 @@
     - name: Create App Service on Linux with Java Runtime
       azure_rm_webapp:
         resource_group: "{{ resource_group }}"
-        name: "{{ webapp_name }}"
+        name: "{{ item }}"
         plan:
           resource_group: "{{ resource_group }}"
           name: "{{ plan_name }}"
@@ -27,3 +27,6 @@
             settings:
               java_container: tomcat
               java_container_version: 8.5
+      loop:
+         - thrasher111
+         - thrasher222
