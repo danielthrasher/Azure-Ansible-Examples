@@ -1,6 +1,6 @@
 ---
 - name: Create Web App
-  hosts: all
+  hosts: localhost
 
   tasks:
 
