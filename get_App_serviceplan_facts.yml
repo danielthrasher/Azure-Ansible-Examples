@@ -1,3 +1,7 @@
-- name: Get azure_rm_appserviceplan_facts for app service plan in resource group
-  azure_rm_webapp_facts:
-    resource_group: myResourceGroup
+- hosts: localhost
+  connection: local
+  
+  tasks:
+    - name: Get azure_rm_appserviceplan_facts for app service plan in resource group
+      azure_rm_webapp_facts:
+        resource_group: myResourceGroup
