@@ -1,0 +1,18 @@
+---
+- name: Create Web App
+
+  tasks:
+
+    - name: Create a linux web app with Node 6.6 framework
+      azure_rm_webapp:
+        resource_group: myresourcegroup
+        name: mylinuxwebapp
+        plan:
+          resource_group: appserviceplan_test
+          name: myappplan
+        app_settings:
+          testkey: testvalue
+        frameworks:
+          - name: "node"
+            version: "6.6"
+      
