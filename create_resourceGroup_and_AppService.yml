@@ -2,7 +2,7 @@
   connection: local
   vars:
     resource_group: myResourceGroup
-    webapp_name: myfirstWebApp
+    webapp_name: thrashandbash1184
     plan_name: myAppServicePlan
     location: eastus
   tasks:
