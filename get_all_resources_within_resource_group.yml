@@ -2,6 +2,7 @@
   connection: local
 
   tasks:
-    - name: Get facts for one resource group
-      azure_rm_resourcegroup_facts:
-        name: "{{ resource_group }}"
+    - name: Query all the resources in the resource group
+      azure_rm_resource_facts:
+        resource_group: "{{ resource_group }}"
+        resource_type: resources
