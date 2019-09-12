@@ -1,0 +1,7 @@
+- hosts: localhost
+  connection: local
+  
+  tasks:
+    - name: Get facts for all Function Apps in a resource group
+      azure_rm_functionapp_facts:
+        resource_group: myResourceGroup
