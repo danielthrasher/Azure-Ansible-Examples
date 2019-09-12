@@ -1,0 +1,9 @@
+- hosts: localhost
+  tasks:
+    - name: GET thrashandbash1184
+      azure_rm_resource_facts:
+        api_version: '2018-02-01'
+        resource_group: 'myResourceGroup'
+        provider: 'Web'
+        resource_type: 'sites'
+        resource_name: 'thrashandbash1184'
