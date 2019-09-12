@@ -2,5 +2,5 @@
 resource_group: myResourceGroup
 plan_name: myAppServicePlan
 location: eastus
-function_app_name: thrashfunction1
+function_app_name: thrashfunction2
 storage_account: thrasherstorageaccount
