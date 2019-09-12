@@ -1,6 +1,7 @@
 - hosts: localhost
   connection: local
 
-- name: Get facts for one resource group
-  azure_rm_resourcegroup_facts:
-    name: "{{ resource_group }}"
+tasks:
+  - name: Get facts for one resource group
+    azure_rm_resourcegroup_facts:
+      name: "{{ resource_group }}"
