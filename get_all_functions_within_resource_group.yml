@@ -12,4 +12,4 @@
         appname: "{{ facts_output.accounts[0].name }}"
 
     - debug:
-      msg: "Function app name: {{ appname }}"
+        msg: "Function app name: {{ appname }}"
