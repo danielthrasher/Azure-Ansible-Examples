@@ -9,7 +9,7 @@
 
     - name: Getting Function App Name
       set_fact:
-        name: "{{ facts_output.accounts[0].name }}"
+        username: "{{ facts_output.accounts[0].name }}"
 
     - debug:
-        msg: "Function app name: {{ name }}"
+        msg: "Function app name: {{ username }}"
