@@ -8,8 +8,8 @@
       register: facts_output
 
     - name: Getting Function App Name
-    set_fact:
-      appname: "{{ facts_output.accounts[0].name }}"
+      set_fact:
+        appname: "{{ facts_output.accounts[0].name }}"
 
     - debug:
       msg: "Function app name: {{ appname }}"
